@@ -52,16 +52,16 @@
                      <children>
                         <TableView fx:id="tbSanPham" layoutX="16.0" layoutY="33.0" prefHeight="226.0" prefWidth="570.0" AnchorPane.bottomAnchor="304.0" AnchorPane.leftAnchor="16.0" AnchorPane.rightAnchor="16.0" AnchorPane.topAnchor="33.0">
                            <columns>
-                              <TableColumn fx:id="sanPhamIDcol" onEditCommit="#changeSanPhamID" prefWidth="85.0" text="ID" />
-                              <TableColumn fx:id="sanPhamNamecol" onEditCommit="#changeSanPhamName" prefWidth="140.0" text="Tên Sản Phẩm " />
-                              <TableColumn fx:id="sanPhamPricecol" onEditCommit="#changeSanPhamPrice" prefWidth="345.0" text="Giá " />
+                              <TableColumn fx:id="sanPhamIDcol" onEditCommit="#changeSanPhamID" prefWidth="146.0" text="ID Sản Phẩm" />
+                              <TableColumn fx:id="sanPhamNamecol" onEditCommit="#changeSanPhamName" prefWidth="184.0" text="Tên Sản Phẩm" />
+                              <TableColumn fx:id="sanPhamPricecol" onEditCommit="#changeSanPhamPrice" prefWidth="240.0" text="Giá Sản Phẩm" />
                            </columns>
                         </TableView>
-                        <TextField fx:id="sanPhamID" layoutX="166.0" layoutY="291.0" prefHeight="26.0" prefWidth="216.0" AnchorPane.bottomAnchor="246.0" AnchorPane.leftAnchor="166.0" />
-                        <TextField fx:id="sanPhamName" layoutX="166.0" layoutY="346.0" prefHeight="25.0" prefWidth="217.0" AnchorPane.bottomAnchor="191.60000000000002" AnchorPane.leftAnchor="166.0" />
-                        <TextField fx:id="sanPhamPrice" layoutX="166.0" layoutY="392.0" prefHeight="26.0" prefWidth="219.0" AnchorPane.bottomAnchor="145.0" AnchorPane.leftAnchor="166.0" />
-                        <Button layoutX="477.0" layoutY="343.0" mnemonicParsing="false" onAction="#AddSp" prefHeight="30.0" prefWidth="61.0" text="Thêm" AnchorPane.bottomAnchor="189.80000000000007" AnchorPane.leftAnchor="477.0" />
-                        <Label layoutX="41.0" layoutY="291.0" prefHeight="17.0" prefWidth="30.0" text="ID :" AnchorPane.bottomAnchor="246.60000000000002" AnchorPane.leftAnchor="41.0">
+                        <TextField fx:id="sanPhamID" layoutX="206.0" layoutY="290.0" prefHeight="26.0" prefWidth="155.0" AnchorPane.bottomAnchor="246.0" AnchorPane.leftAnchor="206.0" />
+                        <TextField fx:id="sanPhamName" layoutX="205.0" layoutY="345.0" prefHeight="25.0" prefWidth="157.0" AnchorPane.bottomAnchor="192.0" AnchorPane.leftAnchor="205.0" />
+                        <TextField fx:id="sanPhamPrice" layoutX="205.0" layoutY="391.0" prefHeight="26.0" prefWidth="157.0" AnchorPane.bottomAnchor="145.0" AnchorPane.leftAnchor="205.0" />
+                        <Button layoutX="395.0" layoutY="287.19999999999993" mnemonicParsing="false" onAction="#AddSp" prefHeight="30.0" prefWidth="61.0" text="Thêm" AnchorPane.bottomAnchor="244.80000000000007" AnchorPane.leftAnchor="395.0" />
+                        <Label layoutX="41.0" layoutY="291.0" prefHeight="25.0" prefWidth="109.0" text="ID Sản Phẩm :" AnchorPane.bottomAnchor="247.0" AnchorPane.leftAnchor="41.0">
                            <font>
                               <Font size="16.0" />
                            </font>
@@ -71,20 +71,20 @@
                               <Font size="16.0" />
                            </font>
                         </Label>
-                        <Label layoutX="36.0" layoutY="392.0" text="Giá:" AnchorPane.bottomAnchor="145.60000000000002" AnchorPane.leftAnchor="36.0">
+                        <Label layoutX="36.0" layoutY="392.0" text="Giá Sản Phẩm :" AnchorPane.bottomAnchor="145.60000000000002" AnchorPane.leftAnchor="36.0">
                            <font>
                               <Font size="16.0" />
                            </font>
                         </Label>
                         <Button layoutX="477.0" layoutY="289.0" mnemonicParsing="false" onAction="#RemoveSanPham" prefHeight="30.0" prefWidth="61.0" text="Xóa" AnchorPane.bottomAnchor="243.80000000000007" AnchorPane.leftAnchor="477.0" />
-                        <Button layoutX="477.0" layoutY="378.0" mnemonicParsing="false" onAction="#saveSanPham" onMouseClicked="#saveSanPham" prefHeight="30.0" prefWidth="61.0" text="Save" AnchorPane.bottomAnchor="143.0" AnchorPane.rightAnchor="64.0" />
+                        <Button layoutX="477.0" layoutY="378.0" mnemonicParsing="false" onAction="#saveSanPham" onMouseClicked="#saveSanPham" prefHeight="30.0" prefWidth="61.0" text="Lưu" AnchorPane.bottomAnchor="143.0" AnchorPane.rightAnchor="64.0" />
                      </children>
                   </AnchorPane>
                </children>
             </AnchorPane>
          </content>
       </Tab>
-      <Tab text="    Đơn Hàng    ">
+      <Tab text="    Đơn Mua    ">
       <content>
         <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="562.0" prefWidth="664.0">
                <children>
@@ -94,36 +94,36 @@
                       <TableColumn fx:id="donHangNamecol" onEditCommit="#changeDonHangName" prefWidth="140.0" text="Tên Khách Hàng" />
                         <TableColumn fx:id="donHangNameSpcol" minWidth="0.0" onEditCommit="#changeDonHangNameSp" prefWidth="115.199951171875" text="Tên Sản Phẩm" />
                         <TableColumn fx:id="donHangSoLuongCol" onEditCommit="#changeDonHangSoLuong" prefWidth="89.60003662109375" text="Số Lượng" />
-                        <TableColumn fx:id="donHangHoaDonCol" onEditCommit="#changeDonHangHoaDon" prefWidth="165.0" text="Hóa Đơn" />
+                        <TableColumn fx:id="donHangHoaDonCol" onEditCommit="#changeDonHangHoaDon" prefWidth="165.0" text="Tổng Tiền" />
                     </columns>
                   </TableView>
-                  <TextField fx:id="donHangID" layoutX="185.0" layoutY="269.0" prefHeight="26.0" prefWidth="196.0" AnchorPane.bottomAnchor="268.0" AnchorPane.leftAnchor="185.0" />
-                  <TextField fx:id="donHangName" layoutX="185.0" layoutY="305.0" prefHeight="26.0" prefWidth="196.0" AnchorPane.bottomAnchor="231.80000000000007" AnchorPane.leftAnchor="185.0" />
-                  <TextField fx:id="donHangNameSp" layoutX="185.0" layoutY="354.0" prefHeight="26.0" prefWidth="195.0" AnchorPane.bottomAnchor="182.80000000000007" AnchorPane.leftAnchor="185.0" />
-                  <TextField fx:id="donHangSoLuong" layoutX="185.0" layoutY="396.0" prefHeight="26.0" prefWidth="195.0" AnchorPane.bottomAnchor="140.80000000000007" AnchorPane.leftAnchor="185.0" />
-                  <Button layoutX="477.0" layoutY="318.0" mnemonicParsing="false" onAction="#Add" prefHeight="30.0" prefWidth="61.0" text="Thêm" AnchorPane.bottomAnchor="214.80000000000007" AnchorPane.leftAnchor="477.0" />
-                  <Label layoutX="36.0" layoutY="269.0" prefHeight="17.0" prefWidth="30.0" text="ID :" AnchorPane.bottomAnchor="268.6" AnchorPane.leftAnchor="36.0">
+                  <TextField fx:id="donHangID" layoutX="225.0" layoutY="271.0" prefHeight="26.0" prefWidth="156.0" AnchorPane.bottomAnchor="265.0" AnchorPane.leftAnchor="225.0" />
+                  <TextField fx:id="donHangName" layoutX="225.0" layoutY="320.0" prefHeight="26.0" prefWidth="156.0" AnchorPane.bottomAnchor="216.0" AnchorPane.leftAnchor="225.0" />
+                  <TextField fx:id="donHangNameSp" layoutX="224.0" layoutY="363.0" prefHeight="26.0" prefWidth="156.0" AnchorPane.bottomAnchor="173.0" AnchorPane.leftAnchor="224.0" />
+                  <TextField fx:id="donHangSoLuong" layoutX="225.0" layoutY="417.0" prefHeight="26.0" prefWidth="156.0" AnchorPane.bottomAnchor="119.0" AnchorPane.leftAnchor="225.0" />
+                  <Button layoutX="395.0" layoutY="273.19999999999993" mnemonicParsing="false" onAction="#Add" prefHeight="30.0" prefWidth="61.0" text="Thêm" AnchorPane.bottomAnchor="258.80000000000007" AnchorPane.leftAnchor="395.0" />
+                  <Label layoutX="36.0" layoutY="269.0" prefHeight="25.0" prefWidth="113.0" text="ID Đơn Hàng:" AnchorPane.bottomAnchor="269.0" AnchorPane.leftAnchor="36.0">
                      <font>
                         <Font size="16.0" />
                      </font>
                   </Label>
-                  <Label layoutX="36.0" layoutY="354.0" text="Tên Sản Phẩm" AnchorPane.bottomAnchor="183.60000000000002" AnchorPane.leftAnchor="36.0">
+                  <Label layoutX="36.0" layoutY="368.4" text="Tên Sản Phẩm :" AnchorPane.bottomAnchor="168.60000000000002" AnchorPane.leftAnchor="36.0">
                      <font>
                         <Font size="16.0" />
                      </font>
                   </Label>
-                  <Label layoutX="36.0" layoutY="305.0" text="Tên Khách Hàng :" AnchorPane.bottomAnchor="232.60000000000002" AnchorPane.leftAnchor="36.0">
+                  <Label layoutX="36.0" layoutY="321.4" text="Tên Khách Hàng :" AnchorPane.bottomAnchor="215.60000000000002" AnchorPane.leftAnchor="36.0">
                      <font>
                         <Font size="16.0" />
                      </font>
                   </Label>
-                  <Label layoutX="36.0" layoutY="397.0" text="Số lượng :" AnchorPane.bottomAnchor="140.60000000000002" AnchorPane.leftAnchor="36.0">
+                  <Label layoutX="36.0" layoutY="421.4" text="Số lượng :" AnchorPane.bottomAnchor="115.60000000000002" AnchorPane.leftAnchor="36.0">
                      <font>
                         <Font size="16.0" />
                      </font>
                   </Label>
-                  <Button layoutX="477.0" layoutY="266.0" mnemonicParsing="false" onAction="#Remove" prefHeight="30.0" prefWidth="61.0" text="Xóa" AnchorPane.bottomAnchor="266.80000000000007" AnchorPane.leftAnchor="477.0" />
-                  <Button layoutX="477.0" layoutY="365.0" mnemonicParsing="false" onAction="#saveDonHang" onMouseClicked="#saveDonHang" prefHeight="30.0" prefWidth="61.0" text="Save" AnchorPane.bottomAnchor="156.0" AnchorPane.rightAnchor="64.0" />
+                  <Button layoutX="478.0" layoutY="273.19999999999993" mnemonicParsing="false" onAction="#Remove" prefHeight="30.0" prefWidth="61.0" text="Xóa" AnchorPane.bottomAnchor="258.80000000000007" AnchorPane.leftAnchor="478.0" />
+                  <Button layoutX="481.0" layoutY="411.0" mnemonicParsing="false" onAction="#saveDonHang" onMouseClicked="#saveDonHang" prefHeight="30.0" prefWidth="61.0" text="Lưu" AnchorPane.bottomAnchor="121.0" AnchorPane.rightAnchor="60.0" />
                   
                </children></AnchorPane>
       </content>
